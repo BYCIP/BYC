@@ -147,7 +147,7 @@
             font-weight: 600;
         }
 
-        /* --- NUEVA SECCIÓN: SOBRE NOSOTROS --- */
+        /* --- SECCIÓN: NUESTRA FIRMA --- */
         #sobre-nosotros {
             background-image: url('./deco-columnas.jpg');
         }
@@ -180,7 +180,7 @@
 
         .marca-logo img {
             max-width: 140px;
-            max-height: 80px; /* Asegura altura consistente */
+            max-height: 80px;
             width: auto;
             filter: grayscale(100%);
             opacity: 0.6;
@@ -192,7 +192,7 @@
             opacity: 1;
         }
         
-        /* --- NUEVA SECCIÓN: SERVICIOS --- */
+        /* --- SECCIÓN: SERVICIOS --- */
         #servicios {
              background-image: url('./deco-gotas.jpg');
         }
@@ -220,6 +220,59 @@
         .servicio-card h3 {
             margin-bottom: 1rem;
             font-size: 1.4rem;
+        }
+
+        /* --- SECCIÓN: NUESTRO EQUIPO --- */
+        #equipo {
+            background-color: var(--color-gris-claro);
+        }
+
+        .equipo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .miembro-card {
+            background: var(--color-fondo);
+            border: 1px solid #e0e0e0;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .miembro-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .miembro-card h3 {
+            font-size: 1.3rem;
+            color: var(--color-primario);
+            margin-bottom: 0.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .miembro-card .cargo {
+            color: var(--color-secundario);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .miembro-card p {
+            font-size: 0.95rem;
+            color: #555;
+            text-align: left;
+        }
+
+        .equipo-cta {
+            text-align: center;
+            margin-top: 3rem;
         }
 
         /* --- SECCIÓN FORMULARIO --- */
@@ -262,6 +315,7 @@
             border-color: var(--color-secundario);
         }
         
+        /* --- BOTONES (CTA) --- */
         .cta-button {
             background-color: var(--color-primario);
             color: var(--color-fondo);
@@ -311,7 +365,7 @@
         @media (max-width: 768px) {
             h2 { font-size: 2rem; }
             .hero { min-height: auto; padding: 4rem 0; }
-            .section-bg { background-attachment: scroll; } /* Desactiva parallax en móvil */
+            .section-bg { background-attachment: scroll; }
             
             .header .container {
                 flex-direction: column;
@@ -320,6 +374,7 @@
             .header .logo-mini { margin-bottom: 1rem; }
             .nav-links a { margin: 0 0.75rem; }
             .hero .logo-principal { max-width: 300px; }
+            .equipo-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -333,6 +388,7 @@
             <nav class="nav-links">
                 <a href="#marcas">Clientes</a>
                 <a href="#servicios">Servicios</a>
+                <a href="#equipo">Equipo</a>
                 <a href="#formulario">Contacto</a>
             </nav>
         </div>
@@ -343,7 +399,7 @@
             <div class="container">
                 <img src="./byc-logo.png" alt="Logo B&C Estrategia y Propiedad Intelectual" class="logo-principal">
                 <p>Protegemos el Activo más Importante: Tu Marca.</p>
-                </div>
+            </div>
         </section>
 
         <section id="sobre-nosotros" class="section-bg">
@@ -391,6 +447,43 @@
             </div>
         </section>
 
+        <section id="equipo">
+            <div class="container">
+                <h2>Cuerpo Legal Asociado</h2>
+                <div class="equipo-grid">
+                    
+                    <div class="miembro-card">
+                        <h3>Felipe Banús Fariña</h3>
+                        <div class="cargo">Abogado</div>
+                        <p>
+                            Titulado de Derecho en la Universidad Bolivariana. Cuenta con una sólida trayectoria profesional en juicios civiles, comerciales y penales, especializándose activamente en el área de Propiedad Intelectual. Adicionalmente, posee formación como Relacionador Público por la Escuela Nacional de Relaciones Públicas, complementada con un Diplomado en Gestión Docente por el Instituto Profesional de los Lagos y estudios de perfeccionamiento en estrategias de aprendizaje por el Instituto Profesional Arcos.
+                        </p>
+                    </div>
+
+                    <div class="miembro-card">
+                        <h3>Nicolás Calas Vega</h3>
+                        <div class="cargo">Abogado</div>
+                        <p>
+                            Graduado de Ciencias Jurídicas en la Universidad Andrés Bello. Destaca por su consolidada experiencia profesional en litigación dentro de las áreas de derecho civil, familia, comercial, penal y Propiedad Intelectual. Su ejercicio al servicio del derecho se complementa con una destacada faceta académica, desempeñándose como docente en diversas universidades e institutos profesionales del país.
+                        </p>
+                    </div>
+
+                    <div class="miembro-card">
+                        <h3>Ana Francisca Segura Paine-Cura</h3>
+                        <div class="cargo">Abogada</div>
+                        <p>
+                            Titulada en la Universidad Autónoma de Chile, cuenta con más de cinco años de experiencia práctica y de gestión en diversas ramas jurídicas. Posee competencias teóricas avanzadas respaldadas por un Curso de Litigación Oral en la Universidad Autónoma de Chile y un Diplomado en Litigación Laboral otorgado por la Universidad Alberto Hurtado, garantizando una asesoría de alto estándar profesional.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="equipo-cta">
+                    <a href="#formulario" class="cta-button">Cotizar con el Equipo</a>
+                </div>
+            </div>
+        </section>
+
         <section id="formulario">
             <div class="container">
                 <h2>Solicita tu Asesoría</h2>
@@ -432,8 +525,8 @@
         const form = document.getElementById('contact-form');
         const result = document.getElementById('form-result');
         
-        // ¡¡¡NO OLVIDES REEMPLAZAR ESTO CON TU CLAVE DE WEB3FORMS!!!
-        const accessKey = 'TU_ACCESS_KEY_AQUÍ'; 
+        // Clave personal de Web3Forms (AQUÍ ESTÁ TU CLAVE)
+        const accessKey = 'd90dd745-12c7-4cab-b162-4f0e71d0784b'; 
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
