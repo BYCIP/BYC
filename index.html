@@ -395,6 +395,7 @@
     </header>
 
     <main>
+        <!-- ================== SECCIÓN HERO ================== -->
         <section class="hero">
             <div class="container">
                 <img src="./byc-logo.png" alt="Logo B&C Estrategia y Propiedad Intelectual" class="logo-principal">
@@ -402,6 +403,7 @@
             </div>
         </section>
 
+        <!-- ================== SECCIÓN: NUESTRA FIRMA ================== -->
         <section id="sobre-nosotros" class="section-bg">
             <div class="container">
                 <h2 style="color: var(--color-texto-blanco);">Nuestra Firma</h2>
@@ -413,6 +415,7 @@
             </div>
         </section>
 
+        <!-- ================== SECCIÓN MARCAS ================== -->
         <section id="marcas">
             <div class="container">
                 <h2>Marcas que Confían en Nosotros</h2>
@@ -427,6 +430,7 @@
             </div>
         </section>
 
+        <!-- ================== SECCIÓN: SERVICIOS ================== -->
         <section id="servicios" class="section-bg">
             <div class="container">
                 <h2 style="color: var(--color-texto-blanco);">Nuestros Servicios</h2>
@@ -447,11 +451,13 @@
             </div>
         </section>
 
+        <!-- ================== SECCIÓN: NUESTRO EQUIPO ================== -->
         <section id="equipo">
             <div class="container">
                 <h2>Cuerpo Legal Asociado</h2>
                 <div class="equipo-grid">
                     
+                    <!-- MIEMBRO 1: FELIPE BANÚS -->
                     <div class="miembro-card">
                         <h3>Felipe Banús Fariña</h3>
                         <div class="cargo">Abogado</div>
@@ -460,6 +466,7 @@
                         </p>
                     </div>
 
+                    <!-- MIEMBRO 2: NICOLÁS CALAS -->
                     <div class="miembro-card">
                         <h3>Nicolás Calas Vega</h3>
                         <div class="cargo">Abogado</div>
@@ -468,22 +475,16 @@
                         </p>
                     </div>
 
-                    <div class="miembro-card">
-                        <h3>Ana Francisca Segura Paine-Cura</h3>
-                        <div class="cargo">Abogada</div>
-                        <p>
-                            Titulada en la Universidad Autónoma de Chile, cuenta con más de cinco años de experiencia práctica y de gestión en diversas ramas jurídicas. Posee competencias teóricas avanzadas respaldadas por un Curso de Litigación Oral en la Universidad Autónoma de Chile y un Diplomado en Litigación Laboral otorgado por la Universidad Alberto Hurtado, garantizando una asesoría de alto estándar profesional.
-                        </p>
-                    </div>
-
                 </div>
 
+                <!-- BOTÓN DE CONTACTO / COTIZACIÓN -->
                 <div class="equipo-cta">
                     <a href="#formulario" class="cta-button">Cotizar con el Equipo</a>
                 </div>
             </div>
         </section>
 
+        <!-- ================== SECCIÓN FORMULARIO DE CONTACTO ================== -->
         <section id="formulario">
             <div class="container">
                 <h2>Solicita tu Asesoría</h2>
@@ -514,6 +515,7 @@
         </section>
     </main>
 
+    <!-- ================== FOOTER ================== -->
     <footer>
         <div class="container">
             <img src="./byc-logo.png" alt="Logo B&C" class="logo-footer-img">
@@ -521,11 +523,12 @@
         </div>
     </footer>
 
+    <!-- ================== SCRIPT PARA EL FORMULARIO ================== -->
     <script>
         const form = document.getElementById('contact-form');
         const result = document.getElementById('form-result');
         
-        // Clave personal de Web3Forms (AQUÍ ESTÁ TU CLAVE)
+        // Clave personal de Web3Forms
         const accessKey = 'd90dd745-12c7-4cab-b162-4f0e71d0784b'; 
 
         form.addEventListener('submit', function(e) {
